@@ -1,0 +1,18 @@
+
+  <div class="jumbotron">
+    <h1 class="display-4">Movies App</h1>
+    <p class="lead">This is a movies' app</p>
+    
+  </div>
+
+  <div class="container main-container">
+
+    <app-gallery [movies]="billboard | slice:0:6"
+                 title = "Billboard"></app-gallery>
+
+    <app-gallery [movies]="populars | slice:0:6"
+                 title = "Popular movies"></app-gallery>
+
+    <app-gallery [movies]="popularByKids | slice:0:6"
+                 title = "Popular kids movies"></app-gallery>
+  </div>
